@@ -4,38 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currículo - Gabriel da Silva Fernandes Cunha</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 20px;
-        }
-        .curriculo {
-            background-color: #fff;
-            padding: 30px;
-            max-width: 800px;
-            margin: auto;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        h1, h2 {
-            color: #333;
-        }
-        .section {
-            margin-bottom: 20px;
-        }
-        .info-basica {
-            font-size: 18px;
-        }
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link style.css>
+        
     </style>
 </head>
 <body>
+    <button class="mode-toggle" onclick="toggleMode()">Modo Escuro</button>
+
     <div class="curriculo">
         <h1>Gabriel da Silva Fernandes Cunha</h1>
         <div class="info-basica">
             <p>Brasileiro, Solteiro, 17 Anos</p>
-            Endereço - George oeterer, Iperó/SP</p>
-            <p> </p>
+            <p>Endereço: George Oeterer, Iperó/SP</p>
         </div>
 
         <div class="section">
@@ -48,25 +31,42 @@
             <ul>
                 <li>Ensino Médio - Em andamento</li>
                 <li>Técnico em Desenvolvimento de Sistemas - Em andamento</li>
-                <li>Lógica de programação - Concluido</li>
-                <li>Tecnologia da informação e comunicação - Concluido</li>
+                <li>Lógica de Programação - Concluído</li>
+                <li>Tecnologia da Informação e Comunicação - Concluído</li>
             </ul>
         </div>
 
         <div class="section">
             <h2>Habilidades</h2>
             <ul>
-                <li>Lógica de programação </li>
+                <li>Lógica de programação</li>
                 <li>Conhecimentos básicos em HTML, CSS e JavaScript</li>
                 <li>Facilidade de aprendizado e trabalho em equipe</li>
             </ul>
         </div>
 
-        <div class="section">
+        <div class="section contato">
             <h2>Contato</h2>
-            <p>E-mail: gabrielrebecagiulia@email.com</p>
-            <p>Telefone: (15) 99688-8734</p>
+            <p>E-mail: <a href="mailto:gabrielrebecagiulia@email.com">gabrielrebecagiulia@email.com</a></p>
+            <p>Telefone: <a href="tel:+5515996888734">(15) 99688-8734</a></p>
+            <p>GitHub: <a href="https://github.com/GabrielSiilvaz" target="_blank"><i class="fab fa-github"></i> GabrielSiilvaz</a></p>
+        </div>
+
+        <div class="footer">
+            <p>Desenvolvido por Gabriel da Silva Fernandes Cunha</p>
         </div>
     </div>
+
+    <script>
+        function toggleMode() {
+            document.body.classList.toggle('dark-mode');
+            const button = document.querySelector('.mode-toggle');
+            if (document.body.classList.contains('dark-mode')) {
+                button.innerText = 'Modo Claro';
+            } else {
+                button.innerText = 'Modo Escuro';
+            }
+        }
+    </script>
 </body>
 </html>
