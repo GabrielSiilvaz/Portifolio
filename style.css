@@ -1,0 +1,183 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #e9ecef;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.curriculo {
+    background-color: #fff;
+    padding: 40px;
+    max-width: 900px;
+    margin: 50px auto;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    background: linear-gradient(135deg, #007bff, #6c757d);
+    color: #fff;
+    transition: background 0.3s, color 0.3s;
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.info-basica p {
+    font-size: 18px;
+    margin: 5px 0;
+    color: #fff;
+}
+
+.section {
+    margin-bottom: 25px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    color: #333;
+}
+
+.section h2 {
+    font-size: 24px;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.section ul {
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 16px;
+}
+
+.section .contato p {
+    font-size: 18px;
+    color: #333;
+    margin: 5px 0;
+}
+
+.section .contato p a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 500;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Botão de modo claro e escuro */
+.mode-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    z-index: 100;
+}
+
+.dark-mode .curriculo {
+    background: linear-gradient(135deg, #343a40, #6c757d);
+    color: #f8f9fa;
+}
+
+.dark-mode .section {
+    background-color: #495057;
+    color: #f8f9fa;
+}
+
+.dark-mode .section h2 {
+    color: #17a2b8;
+}
+
+.dark-mode .footer {
+    color: #f8f9fa;
+}
+
+.dark-mode .info-basica p,
+.dark-mode .section ul li,
+.dark-mode .section .contato p {
+    color: #f8f9fa;
+}
+
+.dark-mode .section .contato p a {
+    color: #17a2b8;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .curriculo {
+        padding: 25px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    .section h2 {
+        font-size: 20px;
+    }
+}
+/* Botão de modo claro e escuro */
+.mode-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    z-index: 100;
+}
+
+.dark-mode .curriculo {
+    background: linear-gradient(135deg, #343a40, #6c757d);
+    color: #f8f9fa;
+}
+
+.dark-mode .section {
+    background-color: #495057;
+    color: #f8f9fa;
+}
+
+.dark-mode .section h2 {
+    color: #17a2b8;
+}
+
+.dark-mode .footer {
+    color: #f8f9fa;
+}
+
+.dark-mode .info-basica p,
+.dark-mode .section ul li,
+.dark-mode .section .contato p {
+    color: #f8f9fa;
+}
+
+.dark-mode .section .contato p a {
+    color: #17a2b8;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .curriculo {
+        padding: 25px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    .section h2 {
+        font-size: 20px;
+    }
+}
